@@ -13,7 +13,47 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/table_parent">
+        android:id="@+id/table_parent"
+        android:stretchColumns="0,1,2"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size">
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/sno_header"
+                android:text="S.No."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_header"
+                android:text="Items"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/price_header"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
 
     </TableLayout>
 
@@ -32,10 +72,6 @@
         android:layout_gravity="center"
         android:text="close" />
 
-    <TextView
-        android:id="@+id/msgView"
-        android:layout_width="match_parent"
-        android:layout_height="178dp" />
 
 
 </LinearLayout>
